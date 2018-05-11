@@ -18,19 +18,19 @@ console.log('Bot hazır ve giriş yaptı.');
 
     var Games = [
 
-        "rb!kurulum ✨",
+        "rb!kurulum 📋",
     
-        "Destek sunucum: https://discord.gg/tn4nPxh ✨",
+        "Destek sunucum: https://discord.gg/tn4nPxh 📛",
 		
-		`${client.guilds.size} Sunucu ${client.users.size} kullanıcı ✨`,
+		`${client.guilds.size} Sunucu ${client.users.size} kullanıcı 👔`,
 		
 		`${prefix}yardım ✨`,
 		
-		`Beni Davet Etmek İçin ${prefix}davet ✨`,
+		`Beni Davet Etmek İçin ${prefix}davet 🎊 🎉 `,
 
 
 
-        `${prefix}anket <anketiniz> ✨`
+        `${prefix}anket <anketiniz> ✅`
 
 
     ];

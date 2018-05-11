@@ -23,7 +23,7 @@ exports.run = (client, message, args) => {
   const embed = new Discord.RichEmbed()
     .setColor(0x00AE86)
     .setTimestamp()
-    .addField('Eylem:', 'Ban')
+    .addField('Eylem:', 'Uzaklaştırma 🛂')
     .addField('Kullanıcı:', `${user.username}#${user.discriminator} (${user.id})`)
     .addField('Yetkili:', `${message.author.username}#${message.author.discriminator}`)
     .addField('Sebep', reason);
