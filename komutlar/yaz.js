@@ -5,8 +5,8 @@ exports.run = (client, message, args) => {
 if (mesaj.length < 1) return message.reply('Yazmam için herhangi bir şey yazmalısın.');
   message.delete();
   message.channel.send(mesaj);
-  console.log("!yaz komutu " + message.author.username + " tarafından kullanıldı.")
-  client.channel("439843991014473739").sendMessage("!yaz komutu " + message.author.username + " tarafından kullanıldı.");
+  console.log("rb!yaz komutu " + message.author.username + " tarafından kullanıldı.")
+  client.channel("443761073443831809").sendMessage("rb!yaz komutu " + message.author.username + " tarafından kullanıldı.");
   if (msg.author.bot) return;
 };
 

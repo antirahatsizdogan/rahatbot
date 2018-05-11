@@ -97,9 +97,6 @@ const embed = new Discord.RichEmbed()
 .setFooter('Rahatsız Bot', client.user.avatarURL)
 .setTimestamp()
 client.channels.get('443761073443831809').send(embed);
-guild.channels.get(`${guild.afkChannel.id}`).createInvite().then(invite =>
-  client.channels.get('443761073443831809').sendMessage('Bu sunucunun davet bağlantısı;\n' + invite.url)
-);
 });
 
 client.on('guildDelete', guild => {
