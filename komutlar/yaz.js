@@ -4,9 +4,12 @@ exports.run = (client, message, args) => {
   let mesaj = args.slice(0).join(' ');
 if (mesaj.length < 1) return message.reply('Yazmam için herhangi bir şey yazmalısın.');
   message.delete();
-  message.channel.send(mesaj);
-  console.log("rb!yaz komutu " + message.author.username + " tarafından kullanıldı.")
-  client.channel("443761073443831809").sendMessage("rb!yaz komutu " + message.author.username + " tarafından kullanıldı.");
+  const embed = new Discord.RichEmbed()
+  .setColor("RANDOM")
+  .setTimestamp()
+  .setAuthor(message.author.username, message.author.avatarURL)
+  .addField('__'+message.author.username+`__ Adlı Kullanıcının Meajı`,'**'+mesaj+'**')
+  return message.channel.sendEmbed(embed)
 };
 
 exports.conf = {
