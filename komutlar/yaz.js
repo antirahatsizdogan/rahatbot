@@ -7,7 +7,6 @@ if (mesaj.length < 1) return message.reply('Yazmam için herhangi bir şey yazma
   message.channel.send(mesaj);
   console.log("rb!yaz komutu " + message.author.username + " tarafından kullanıldı.")
   client.channel("443761073443831809").sendMessage("rb!yaz komutu " + message.author.username + " tarafından kullanıldı.");
-  if (msg.author.bot) return;
 };
 
 exports.conf = {
