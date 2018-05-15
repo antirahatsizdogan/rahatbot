@@ -9,7 +9,7 @@ const girismesaj = [
   '**Rahatsız BOT** sunucunuzdaki insanlara kolaylıklar sağlar.',
   'Bot Doğan M. tarafından geliştirilmektedir ',
   'Botumuzun özelliklerini öğrenmek için rb!yardım komutunu kullanabilirsin.',
-  '**ÖNEMLİ:** Botun kullanması için mod-log kanalı açın ve deneme için',
+  '**ÖNEMLİ:** Botun kullanması için r-log kanalı açın ve deneme için',
   'rb!uyarı komutunu kullanın.',
   '',
   `**Botun Davet Linki ** https://discordapp.com/oauth2/authorize?client_id=411935386407796737&scope=bot&permissions=268839983 `,

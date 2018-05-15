@@ -145,27 +145,6 @@ client.on('error', e => {
   console.log(chalk.bgRed(e.replace(regToken, 'that was redacted')));
 });
 
-client.on('guildMemberAdd', member => {
-  const hg = new Discord.RichEmbed()
-  .setAuthor(client.user.username, client.user.avatarURL)
-  .setThumbnail(member.user.displayAvatarURL)
-  .setDescription(`** ${member.guild.name} Sunucusuna Hoşgeldin ${member.user.username}**`)
-  .setFooter(`© Rahatsız Bot`)
-  .setTimestamp()
-  .setColor('RANDOM')
-  member.send(hg);
-});
-
-client.on('guildMemberRemove', member => {
-  const bb = new Discord.RichEmbed()
-  .setAuthor(client.user.username, client.user.avatarURL)
-  .setThumbnail(member.user.displayAvatarURL)
-  .setDescription(`** ${member.guild.name} Görüşmek Üzere ${member.user.username}** :wave:`)
-  .setFooter(`© Rahatsız Bot`)
-  .setTimestamp()
-  .setColor('RANDOM')
-  member.send(bb);
-});
 
 client.on('guildMemberAdd', member => {
   member.addRole(member.guild.roles.find(r => r.name.startsWith('Üye')));
